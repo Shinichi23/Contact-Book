@@ -1,4 +1,4 @@
-#Contact Book API
+Contact Book API
 
 The Contact Book API is a simple RESTful web service designed to manage a digital contact book. It provides endpoints for basic CRUD operations, allowing users to create, retrieve, update, and delete contacts. This project is beginner-friendly, making it an excellent addition to your portfolio.
 Features
@@ -21,13 +21,13 @@ Getting Started
 
     bash
 
-git clone https://github.com/your-username/contact-book-api.git
+git clone https://github.com/Shinichi23/contact-book.git
 
 Navigate to the Project Directory:
 
 bash
 
-cd contact-book-api
+cd contact-book
 
 Run the Application:
 
