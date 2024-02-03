@@ -13,7 +13,6 @@ Technologies Used
     Golang: The backend of the API is built using the Go programming language.
     RESTful API: Follows RESTful principles for designing web services.
     JSON: Communicates data in JSON format, a lightweight and widely used data interchange format.
-    Gorilla Mux: Uses Gorilla Mux as the router for handling HTTP requests.
 
 Getting Started
 

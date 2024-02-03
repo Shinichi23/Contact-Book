@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Contact</title>
+  </head>
+  <body>
+    <h2>Create Contact</h2>
+    <form action="/create" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br />
+
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone" required /><br />
+
+      <input type="submit" value="Create" />
+    </form>
+    <h2>Contacts</h2>
+    <ul>
+      {{range $index, $contact := .Contacts}}
+      <li>
+        {{.Name}} - {{.Email}} - {{.Phone}}
+        <form action="/delete" method="post" style="display: inline">
+          <input type="hidden" name="index" value="{{$index}}" />
+          <input type="submit" value="Delete" />
+        </form>
+        <form action="/edit" method="get" style="display: inline">
+          <input type="hidden" name="index" value="{{$index}}" />
+          <input type="submit" value="Edit" />
+        </form>
+      </li>
+      {{end}}
+    </ul>
+  </body>
+</html>
